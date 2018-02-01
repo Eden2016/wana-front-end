@@ -1,0 +1,100 @@
+.dropdown{
+    display: inline-block;
+    position: relative;
+    &::after{
+        content:'';
+        width:24px;
+        height:24px;
+        display: inline-block;
+        opacity:0.8;
+        vertical-align: middle;
+        background-image:url('/assets/img/caret-thick-black.svg');
+        @include smallCaret();
+    }
+    &:hover{
+        &::after{
+            opacity:1;
+        }
+        .avatar{
+            transform: scale(1.05);
+        }
+    }
+    &.dropdown--no-caret{
+        &::after{
+            display: none;
+        }
+    }
+    &.dropdown--l{
+        .dropdown__box{
+            width:100vw;
+            max-width:400px;
+        }
+    }
+    .dropdown__box{
+        color:$black;
+        pointer-events: none;
+        visibility:hidden;
+        opacity: 0;
+        display: table;
+        position: absolute;
+        right:0;
+        overflow: hidden;
+        transform:translate(0, $grid-unit) scale(0.95);
+        transform-origin: top;
+        border-radius: $borderRadius-m;
+        box-shadow:$boxShadow-l;
+        background-color:$white;
+        transition:all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        &[data-position="right"]{
+            right:0;
+        }
+        &[data-position="center"]{
+            left:50%;
+            transform: translate(-50%, $grid-unit);
+        }
+        &[data-position="left"]{
+            left:0;
+        }
+        &:hover{
+            cursor: default;
+        }
+        .card__head{
+            padding:0 $spacing-s;
+        }
+        .dropdown__box-inner{
+            padding:$spacing-xs $spacing-m;
+            max-height:480px;
+            min-height:360px;
+            overflow-y: auto;
+        }
+    }
+    &.is--active{
+        .dropdown__box{
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+            transform:translate(0, 0) scale(1);
+            &[data-position="center"]{
+                transform: translate(-50%, 0) scale(1);
+            }
+        }
+    }
+    &.dropdown--up{
+        .dropdown__box{
+            bottom:100%;
+        }
+    }
+    &.dropdown--over{
+        .dropdown__box{
+            top:4px;
+        }
+    }
+}
+
+.-reversed{
+    .dropdown{
+        &::after{
+            background-image:url('/assets/img/caret-thick-white.svg');
+        }
+    }
+}

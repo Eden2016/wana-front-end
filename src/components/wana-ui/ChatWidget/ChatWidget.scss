@@ -1,0 +1,19 @@
+.chatWidget{
+  position: fixed;
+  bottom: 0;
+  right: 2em;
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  pointer-events: none;
+}
+
+.hidden{
+  display: none;
+}
+
+.chatWindow{
+  position: relative;
+  left: 250px;
+}

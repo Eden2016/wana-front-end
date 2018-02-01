@@ -1,0 +1,55 @@
+.pagination{
+    .page{
+        width:48px;
+        height:28px;
+        line-height:28px;
+        margin-left:-1px;
+        float:left;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+        border:1px solid $black-10;
+        border-left:none;
+        font-size: 0.75em;
+        font-weight:600;
+        color:$primary;
+        position: relative;
+        &:first-child{
+            margin-left:0;
+            border-radius:4px 0 0 4px;
+            border-left:1px solid $black-10;
+        }
+        &:last-child{
+            border-radius:0 4px 4px 0;
+        }
+        &.is--active{
+            color:$black;
+            &:hover{
+                pointer-events: none;
+                background-color:transparent;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            background-color:rgba(0,0,0,0.05);
+        }
+        .dropdown__box{
+            width:46px;
+        }
+        &.page--nav{
+            svg{
+                margin:0;
+            }
+            &.page--prev{
+                svg{
+                    transform: rotate(90deg) translateX(-2px);;
+                }
+            }
+            &.page--next{
+                svg{
+                    transform: rotate(-90deg) translateX(2px);
+                }
+            }
+        }
+    }
+}

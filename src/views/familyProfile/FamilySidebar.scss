@@ -1,0 +1,13 @@
+@media (max-width: 48em){
+  .sidebar .exchange__panel {
+    margin-top: 0;
+  }
+}
+
+.tabs__list.-reversed .tab.is--active {
+  color: #FFFFFF;
+  box-shadow: inset 0 -3px #FFFFFF;
+}
+.tabs__list.-reversed .tab {
+  color: rgba(255, 255, 255, 0.6);
+}

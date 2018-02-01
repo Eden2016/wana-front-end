@@ -1,0 +1,60 @@
+.curve::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(/assets/img/curve-top.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 25px;
+  z-index: 10; }
+
+.curve.curve--reverse::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url(/assets/img/curve-bottom.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 25px;
+  z-index: 10; }
+
+.divider-slash {
+  display: block;
+  height: 1px;
+  width: 100%;
+  max-width: 1142px;
+  background: url(/assets/img/divider.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.img-fluid {
+  width: 100%; }
+
+.img-flush--r {
+  -webkit-transform: translateX(-16px);
+  transform: translateX(-16px); }
+
+.section {
+  position: relative;
+  padding: 80px 16px; }
+
+@media screen and (min-width: 1200px) {
+  .curve::after {
+    height: 32px; } }
+
+@media screen and (max-width: 768px) {
+  .curve::after {
+    height: 14px; } }
+
+@media screen and (max-width: 480px) {
+  .curve::after {
+    height: 8px; } }

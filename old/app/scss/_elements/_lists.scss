@@ -1,0 +1,167 @@
+// Unordered Lists
+
+.list{
+    .item{
+        position:relative;
+    }
+    &.list--bulleted{
+        list-style: disc;
+    }
+    &.list--truncated{
+        .item{
+            white-space: nowrap;
+        }
+    }
+    &.list--inline{
+        .item{
+            display:inline-block;
+            vertical-align: middle;
+        }
+        &.list--padded{
+            .item{
+                margin-right:$spacing-m;
+                &:last-child{
+                    margin-right:0;
+                }
+            }
+        }
+    }
+    &.list--divided{
+        .item{
+            margin-right:$grid-unit * 3;
+            padding-right:$grid-unit * 3;
+            border-right:1px solid $black-10;
+            &:last-child{
+                margin-right:0;
+                padding-right:0;
+                border-right:none;
+            }
+            .list--inline{
+                .item{
+                    margin-right:$grid-unit;
+                    padding-right:0;
+                    border-right:none;
+                }
+            }
+        }
+        &.-tight{
+            .item{
+                margin-right:$grid-unit * 2;
+                padding-right:$grid-unit * 2;
+                &:last-child{
+                    margin-right:0;
+                    padding-right:0;
+                    border-right:none;
+                }
+            }
+        }
+    }
+    &.list--rows{
+        padding-left:$spacing-m;
+        .item{
+            width:100%;
+            display: block;
+            margin-right:0 !important;
+            padding:12px $spacing-m 12px 0!important;
+            border-bottom:1px solid $gray;
+            transition: all 0.1s ease-in-out;
+            &:last-child{
+                border:none;
+            }
+            &:hover{
+                cursor: pointer;
+                background-color:$white;
+            }
+            &.is--new{
+                position: relative;
+                &::after{
+                    content:'';
+                    width:8px;
+                    height:8px;
+                    border-radius:4px;
+                    display: block;
+                    position: absolute;
+                    right:$spacing-m;
+                    top:50%;
+                    transform:translateY(-50%);
+                    background-color:$primary;
+                }
+            }
+        }
+    }
+    &.list--traits{
+        overflow: hidden;
+        .item{
+            width:calc(50%);
+            float:left;
+            margin-bottom:$spacing-m;
+            font-size:0.75em;
+        }
+    }
+    &.list--nav{
+        padding:$grid-unit 0;
+        .item{
+            min-width:48px;
+            display: block !important;
+            font-size:1em;
+            text-align: center;
+            &:hover{
+                cursor: pointer;
+                color:$white;
+                background-color:$primary;
+            }
+        }
+    }
+    &.list--thumbs{
+        display: flex;
+        .thumb{
+            max-width:72px;
+            flex-grow: 1;
+            flex:1;
+            margin-right:$grid-unit*2;
+            position: relative;
+            overflow: hidden;
+            border-radius:$borderRadius-s;
+            &:last-child{
+                margin-right:0;
+            }
+            img{
+                width:100%;
+                transition: all 0.1s ease-in-out;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+            &[data-more]{
+                &::before{
+                    content:'';
+                    width:100%;
+                    height:100%;
+                    position: absolute;
+                    line-height: 100%;
+                    background-color:$overlay-primary;
+                }
+                &::after{
+                    content:attr(data-more);
+                    display: block;
+                    position: absolute;
+                    color:$white;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%, -50%);
+                    font-weight:700;
+                }
+            }
+        }
+    }
+}
+
+.-reversed{
+    .list{
+        &.list--divided{
+            .item{
+                border-right-color:$white-10;
+            }
+        }
+    }
+}

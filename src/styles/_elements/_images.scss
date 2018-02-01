@@ -1,0 +1,206 @@
+//=== Logos ===//
+//=============//
+.logo{
+    width:calc(100% - (#{$grid-unit} * 4));
+    display: block;
+    margin:0 auto;
+    img{
+        width:100%;
+    }
+    &.logo--l{
+        max-width:220px;
+    }
+}
+
+//=== Avatars ===//
+//===============//
+.avatar{
+    width:48px;
+    height:48px;
+    display: inline-block;
+    border-radius:24px;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: middle;
+    background-image:url('/assets/img/def-avatar.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:all 0.1s ease-in-out;
+    &.avatar--outlined{
+        border:2px solid $white;
+    }
+    &.avatar--square{
+        border-radius:$borderRadius-m !important;
+        .map{
+            border-radius:$borderRadius-m !important;
+        }
+    }
+    &.avatar--btn{
+        &:hover{
+            cursor: pointer;
+            transform:scale(1.05);
+        }
+    }
+    &.avatar--edit{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content:'';
+            width:100%;
+            height:100%;
+            display: block;
+            opacity:0.5;
+            background-color:$primary;
+            transition: all 0.1s ease-in-out;
+        }
+        &::after{
+            content:'';
+            width:24px;
+            height:24px;
+            display: block;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            background-image:url('/assets/img/icon-camera-white.svg');
+            background-size:100%;
+            background-position: center;
+            background-repeat:no-repeat;
+        }
+        &:hover{
+            cursor: pointer;
+            &::before{
+                opacity:0.8;
+            }
+        }
+        input[type="file"]{
+            position: absolute;
+            top:-9999em;
+            left:-9999em;
+        }
+    }
+    &.avatar--xs{
+        width:24px;
+        height:24px;
+        border-radius:12px;
+        &.avatar--outlined{
+            border-width:1px;
+        }
+        &.avatar--edit{
+            &::after{
+                width:12px;
+                height:12px;
+            }
+        }
+    }
+    &.avatar--s{
+        width:32px;
+        height:32px;
+        border-radius:16px;
+        &.avatar--edit{
+            &::after{
+                width:16px;
+                height:16px;
+            }
+        }
+    }
+    &.avatar--m{
+        width:48px;
+        height:48px;
+        border-radius:24px;
+    }
+    &.avatar--l{
+        width:64px;
+        height:64px;
+        border-radius:32px;
+    }
+    &.avatar--xl{
+        width:120px;
+        height:120px;
+        border-radius:60px;
+        &.avatar--outlined{
+            border-width:4px;
+        }
+        &.avatar--edit{
+            &::after{
+                width:32px;
+                height:32px;
+            }
+        }
+    }
+    &.has--badge{
+        &::after{
+            content:attr(data-badge);
+            display: block;
+            width:22px;
+            height:22px;
+            border-radius:50%;
+            position:absolute;
+            right:-4px;
+            top:-4px;
+            border:3px solid $white;
+            text-align: center;
+            background-size:10px 10px;
+            background-position: center;
+            background-repeat:no-repeat;
+            background-color:$secondary;
+        }
+        &.is--approved{
+            &::after{
+                background-image:url('/assets/img/icon-check-white.svg');
+            }
+        }
+        &.is--alert{
+            &::after{
+                background-image:url('/assets/img/icon-alert-white.svg');
+                background-color:$warning;
+            }
+        }
+    }
+    &.is--complete{
+        overflow: hidden;
+        &::before, &::after{
+            content:'';
+            display: block;
+            position: absolute;
+        }
+        &::before{
+            width:20px;
+            height:20px;
+            border:2px solid $white;
+            border-radius:50%;
+            z-index: 1;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+        &::after{
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            background-color:rgba($primary, 0.8);
+            background-image:url('/assets/img/icon-check-white.svg');
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:10px;
+        }
+    }
+    .map{
+        width:100%;
+        height:100%;
+        border-radius:50%;
+        background-color:$gray;
+    }
+    .marker{
+        width:61px;
+        height:58px;
+        position: absolute;
+        z-index: 1;
+        left:36%;
+        top:-16px;
+        background-image:url('/assets/img/map-pin.png');
+        background-size:100%;
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-check-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-check-white" transform="translate(0.000000, -1.000000)">
+            <rect id="Rectangle-4-Copy-4" x="0" y="0" width="10" height="10"></rect>
+            <path d="M3.75,8.5 C4.00592232,8.5 4.26184464,8.40236893 4.45710678,8.20710678 L9.45710678,3.20710678 C9.84763107,2.81658249 9.84763107,2.18341751 9.45710678,1.79289322 C9.06658249,1.40236893 8.43341751,1.40236893 8.04289322,1.79289322 L3.75,6.08578644 L2.37377345,4.70955989 C1.98324916,4.31903559 1.35008418,4.31903559 0.959559885,4.70955989 C0.569035594,5.10008418 0.569035594,5.73324916 0.959559885,6.12377345 L3.04289322,8.20710678 C3.23815536,8.40236893 3.49407768,8.5 3.75,8.5 Z" id="Combined-Shape" fill="#5F70D0" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

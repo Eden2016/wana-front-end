@@ -1,0 +1,26 @@
+.modal.modal-action.confirmation__modal{
+   border-radius: 10px;
+}
+.modal-content--white{
+  background: #fff;
+}
+
+.confirmation__modal--close{
+  font-size: 22px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.confirmation__modal--icon{
+  display: block;
+  margin: auto;
+}
+
+.confirmation__modal--title{
+  line-height: 1.5;
+  padding: 1em;
+}
+
+.confirmation__modal--message{
+  line-height: 1.5;
+}

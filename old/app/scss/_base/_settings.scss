@@ -1,0 +1,37 @@
+//====================//
+//===== SETTINGS =====//
+//====================//
+
+//=== TABLE OF CONTENTS
+
+$breakpoint-s: 30em !default; //480px
+$breakpoint-m: 48em !default; //768px
+$breakpoint-ml: 60em !default; //960px
+$breakpoint-l: 80em !default; //1280px
+$breakpoint-xl: 100em !default; //1600px
+$breakpoint-xxl: 120em !default; //1920px
+
+
+//===== Spacing =====//
+//===================//
+$grid-unit: 8px;
+
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-s: 16px;
+$spacing-m: 24px;
+$spacing-l: 32px;
+$spacing-xl: 40px;
+$spacing-xxl: 48px;
+$spacing-xxxl: 56px;
+
+$borderRadius-s: 2px;
+$borderRadius-m: 4px;
+$borderRadius-l: 8px;
+
+$boxShadow-s: 0 2px 6px 0 rgba(0,0,0, 0.05);
+$boxShadow-m: 0 2px 6px 0 rgba(0,0,0, 0.20);
+$boxShadow-l: 0 2px 40px 0 rgba(0,0,0, 0.15);
+
+$headerHeight:72px;
+$headerHeightMobile:56px;

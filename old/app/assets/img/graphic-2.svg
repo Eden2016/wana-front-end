@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>graphic-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-398.000000, -663.000000)">
+            <g id="Group-25" transform="translate(399.000000, 679.000000)">
+                <g id="baby" transform="translate(0.000000, 15.000000)">
+                    <g id="invisible_shape" transform="translate(0.000000, 1.000000)">
+                        <rect id="Rectangle-path" x="0" y="0" width="48" height="48"></rect>
+                    </g>
+                    <g id="Outline_Icons" transform="translate(6.000000, 0.000000)" stroke="#5F70D0" stroke-width="2" stroke-linejoin="round">
+                        <g id="Group" transform="translate(18.000000, 25.000000) rotate(8.000000) translate(-18.000000, -25.000000) translate(4.000000, 2.000000)">
+                            <path d="M0.298,14.944 C-0.034,11.104 1.256,7.3 3.862,4.46 C6.468,1.618 10.146,0 14,0 C17.856,0 21.534,1.618 24.136,4.458 C26.742,7.298 28.034,11.102 27.7,14.942 L25.952,35.04 C25.414,41.24 20.224,46 14,46 C7.778,46 2.586,41.24 2.046,35.042 L0.298,14.944 Z" id="Shape"></path>
+                            <path d="M24.084,14.254 C24.084,19.916 19.608,24 14.084,24 C8.56,24 4.084,19.916 4.084,14.254 C4.084,8.592 8.56,4 14.084,4 C19.608,4 24.084,8.592 24.084,14.254 Z" id="Shape"></path>
+                            <path d="M15.01,18.026 C15.01,18.592 14.558,19 14,19 C13.444,19 12.99,18.592 12.99,18.026 C12.99,17.46 13.444,17 14,17 C14.558,17 15.01,17.458 15.01,18.026 Z" id="Shape"></path>
+                            <path d="M8,12.05 C8,10.918 8.896,10 10,10 C11.106,10 12,10.918 12,12.05" id="Shape" stroke-linecap="round"></path>
+                            <path d="M16,12.05 C16,10.918 16.896,10 18,10 C19.106,10 20,10.918 20,12.05" id="Shape" stroke-linecap="round"></path>
+                            <path d="M1.516,28.922 L25.58,37.144" id="Shape" stroke-linecap="round"></path>
+                            <path d="M8.358,31.268 L27,23.25" id="Shape" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="baby-copy" transform="translate(80.000000, 40.000000) rotate(-8.000000) translate(-80.000000, -40.000000) translate(56.000000, 16.000000)">
+                    <g id="invisible_shape">
+                        <rect id="Rectangle-path" x="0" y="0" width="48" height="48"></rect>
+                    </g>
+                    <g id="Outline_Icons" transform="translate(10.000000, 1.000000)" stroke-width="2" stroke="#5F70D0" stroke-linejoin="round">
+                        <g id="Group">
+                            <path d="M0.298,14.944 C-0.034,11.104 1.256,7.3 3.862,4.46 C6.468,1.618 10.146,0 14,0 C17.856,0 21.534,1.618 24.136,4.458 C26.742,7.298 28.034,11.102 27.7,14.942 L25.952,35.04 C25.414,41.24 20.224,46 14,46 C7.778,46 2.586,41.24 2.046,35.042 L0.298,14.944 Z" id="Shape"></path>
+                            <path d="M24.084,14.254 C24.084,19.916 19.608,24 14.084,24 C8.56,24 4.084,19.916 4.084,14.254 C4.084,8.592 8.56,4 14.084,4 C19.608,4 24.084,8.592 24.084,14.254 Z" id="Shape"></path>
+                            <path d="M15.01,18.026 C15.01,18.592 14.558,19 14,19 C13.444,19 12.99,18.592 12.99,18.026 C12.99,17.46 13.444,17 14,17 C14.558,17 15.01,17.458 15.01,18.026 Z" id="Shape"></path>
+                            <path d="M8,12.05 C8,10.918 8.896,10 10,10 C11.106,10 12,10.918 12,12.05" id="Shape" stroke-linecap="round"></path>
+                            <path d="M16,12.05 C16,10.918 16.896,10 18,10 C19.106,10 20,10.918 20,12.05" id="Shape" stroke-linecap="round"></path>
+                            <path d="M1.516,28.922 L25.58,37.144" id="Shape" stroke-linecap="round"></path>
+                            <path d="M8.358,31.268 L27,23.25" id="Shape" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-23" transform="translate(29.000000, 0.000000)" stroke-linecap="round" stroke-width="2" stroke="#9FA9E3" stroke-linejoin="round">
+                    <g id="Outline_Icons">
+                        <g id="Group">
+                            <polyline id="Shape" points="4.988 8 0.014 6 0.988 0"></polyline>
+                            <path d="M46.014,5.878 C40.712,2.304 32.372,0 22.988,0 C13.59,0 5.312,2.414 0.014,6" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-23-Copy" transform="translate(51.500000, 75.000000) scale(-1, -1) translate(-51.500000, -75.000000) translate(28.000000, 71.000000)" stroke-linecap="round" stroke-width="2" stroke="#9FA9E3" stroke-linejoin="round">
+                    <g id="Outline_Icons">
+                        <g id="Group">
+                            <polyline id="Shape" points="4.988 8 0.014 6 0.988 0"></polyline>
+                            <path d="M46.014,5.878 C40.712,2.304 32.372,0 22.988,0 C13.59,0 5.312,2.414 0.014,6" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

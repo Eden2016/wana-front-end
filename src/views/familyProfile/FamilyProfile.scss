@@ -1,0 +1,21 @@
+
+.btn.btn--fav.is--active > .icon-heart.-off {
+  display: none;
+}
+.splash-info-container{
+  display: flex;
+  justify-content:space-between;
+}
+
+.btn.edit-button{
+  color: white;
+  border: 1px solid white;
+  margin-right: 1em;
+}
+
+// test
+.edit-privacy-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

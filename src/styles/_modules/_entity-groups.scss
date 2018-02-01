@@ -1,0 +1,10 @@
+.user__group{
+    display: inline-block;
+    vertical-align: middle;
+    .avatar{
+        margin-left:-5px;
+        &:first-child{
+            margin-left:0;
+        }
+    }
+}

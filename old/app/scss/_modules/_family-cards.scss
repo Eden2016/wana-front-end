@@ -1,0 +1,31 @@
+.fam.card{
+    .fam__card-image{
+        background-image:url('/assets/img/def-family.png');
+    }
+    .btn--fav{
+        visibility: hidden;
+    }
+    &.is--connected{
+        .fam__connection{
+            color:$primary;
+        }
+    }
+    &.is--fav{
+        .btn--fav{
+            visibility: visible;
+        }
+    }
+    .card__image-b{
+        height:56px;
+        .list{
+            .avatar{
+                border:2px solid $white;
+            }
+        }
+    }
+    &:hover{
+        .btn--fav{
+            visibility: visible;
+        }
+    }
+}

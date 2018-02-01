@@ -1,0 +1,54 @@
+.date-group{
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        margin:0 !important;
+    }
+    color:$black;
+    .divider{
+        margin:0 $spacing-xs !important;
+    }
+    .date, .time{
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+
+    .date{
+        height:48px;
+        overflow: hidden;
+        .day, .month{
+            display: block;
+            width:48px;
+            box-sizing: border-box;
+        }
+        .day{
+            height:28px;
+            line-height:28px;
+            font-size:$fs-m;
+            font-weight:700;
+            border:1px solid $gray;
+            border-bottom:none;
+            margin-right:3px;
+            border-radius:2px 2px 0 0;
+        }
+        .month{
+            height:20px;
+            line-height: 20px;
+            @extend .ts--label;
+            font-size:0.75em;
+            color:$white;
+            background-color:$primary;
+            border-radius:0 0 2px 2px;
+        }
+    }
+    .time{
+        height:48px;
+        line-height: 48px;
+        border-radius: $borderRadius-s;
+        border:1px solid $gray;
+        padding:0 $spacing-s;
+        font-weight:500;
+    }
+}

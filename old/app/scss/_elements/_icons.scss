@@ -1,0 +1,91 @@
+[class^="icon-"], [class*=" icon-"] {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-right:$spacing-xs;
+    &.icon--xs{
+        height:16px;
+        width:16px;
+        margin-right:$spacing-xxs;
+        transform: translateY(-2px);
+    }
+    &.icon--s{
+        height:24px;
+        width:24px;
+    }
+    &.icon--m{
+        height:32px;
+        width:32px;
+    }
+    &.icon--l{
+        height:48px;
+        width:48px;
+    }
+}
+
+//=== Credit Cards
+.icon-cc{
+    width:35px;
+    height:25px;
+    display:inline-block;
+    vertical-align: middle;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &.icon--s{
+        width:20px;
+        height:14px;
+    }
+    &.icon--m{
+        width:35px;
+        height:25px;
+    }
+    &.icon--l{
+        width:70px;
+        height:50px;
+    }
+    &.is--visa{
+        background-image:url('../img/icons/cc-visa.svg');
+    }
+    &.is--mastercard{
+        background-image:url('../img/icons/cc-mastercard.svg');
+    }
+    &.is--amex{
+        background-image:url('../img/icons/cc-amex.svg');
+    }
+    &.is--diners-club{
+        background-image:url('../img/icons/cc-diners-club.svg');
+    }
+    &.is--discover{
+        background-image:url('../img/icons/cc-discover.svg');
+    }
+}
+
+//=== Box Icons
+.box-icon{
+    display: inline-block;
+    padding:$spacing-s;
+    border-radius:50%;
+    background-color:$gray;
+    [class^="icon-"], [class*=" icon-"]{
+        margin:0;
+    }
+    &.box-icon--primary{
+        color:$primary;
+        background-color:$primary-20;
+    }
+    &.box-icon--secondary{
+        color:$secondary;
+        background-color:$secondary-20;
+    }
+    &.box-icon--tertiary{
+        color:$tertiary;
+        background-color:$tertiary-20;
+    }
+    &.box-icon--warning{
+        color:$warning;
+        background-color:$warning-20;
+    }
+}

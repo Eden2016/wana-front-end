@@ -1,0 +1,30 @@
+.activity.card{
+    box-shadow: none;
+    margin-bottom:$spacing-m;
+    transition: all 0.1s ease-in-out;
+    &:last-child{
+        margin-bottom:0;
+    }
+    .activity__main{
+        padding:$spacing-s;
+        .avatar{
+            margin-right:$spacing-s;
+        }
+    }
+    .comments__group{
+        display: none;
+    }
+    &.is--expanded{
+        box-shadow: $boxShadow-s;
+        .activity__main{
+            box-shadow: inset 3px 0 0 $secondary;
+            border-bottom:1px solid $light-gray;
+        }
+        .comments__group{
+            display: block;
+        }
+    }
+    &:hover{
+        box-shadow: $boxShadow-s;
+    }
+}

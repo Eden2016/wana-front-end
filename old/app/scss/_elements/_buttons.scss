@@ -1,0 +1,202 @@
+.btn{
+    min-width: 120px;
+    display: inline-block;
+    border-radius: $borderRadius-m;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding:0 $spacing-s;
+    border:none;
+    border-color:transparent;
+    outline: none;
+    font-family:$primary-font;
+    font-size:$fs-xs;
+    font-weight:700;
+    transition:all 0.05s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        box-shadow:0 4px 4px rgba(0,0,0,0.1);
+    }
+    &:active{
+        border-width:0 !important;
+        box-shadow: inset 0 2px 2px rgba(0,0,0, 0.1);
+    }
+    &[disabled]{
+        background-color:$gray;
+        color:$darkest-gray;
+        &:hover{
+            cursor:default;
+            box-shadow: none;
+        }
+    }
+    // &:focus{
+    //     border:2px solid rgba(0,0,0, 0.3);
+    // }
+    &.icon--left{
+        position: relative;
+        svg{
+            position:absolute;
+            left:$spacing-s;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+    &.btn--s{
+        height:32px;
+        line-height: 30px;
+        font-size:0.75em;
+        padding:0 $spacing-xs;
+        min-width:72px;
+    }
+    &.btn--m{
+        height:40px;
+        line-height: 38px;
+        font-size:0.75em;
+        padding:0 $spacing-xs;
+        min-width:80px;
+    }
+    &.btn--l{
+        height:48px;
+        font-size:$fs-s;
+        line-height: 46px;
+        padding:0 $spacing-m;
+    }
+    &.btn--block{
+        display: block;
+        width:100%;
+        margin-bottom:$spacing-s;
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+    &.btn--primary{
+        color:$white;
+        background-color:$primary;
+        &:hover{
+            background-color: lighten($primary, 5%);
+        }
+    }
+    &.btn--secondary{
+        color:$white;
+        background-color:$secondary;
+        &:hover{
+            background-color: lighten($secondary, 5%);
+        }
+    }
+    &.btn--warning{
+        color:$white;
+        background-color:$warning;
+        &:hover{
+            background-color: lighten($warning, 5%);
+        }
+    }
+    &.btn--facebook{
+        color:$white;
+        background-color:$facebook;
+        &:hover{
+            background-color: lighten($facebook, 5%);
+        }
+    }
+    &.btn--reversed{
+        color:$primary;
+        background-color:rgba($white, 0.9);
+        &:hover, &:focus{
+            background-color: $white;
+        }
+        &.dropdown{
+            padding-right:$spacing-xs;
+            &::after{
+                background-image:url('/assets/img/caret-thick-purple.svg');
+            }
+            &.btn--outline{
+                &::after{
+                    background-image:url('/assets/img/caret-thick-white.svg');
+                }
+            }
+        }
+    }
+    &.btn--outline{
+        background:none;
+        border-width:1px;
+        border-style: solid;
+        &.btn--primary{
+            color:$primary;
+            border-color:$primary;
+            &:hover{
+                background-color:$primary-20;
+            }
+        }
+        &.btn--secondary{
+            color:$secondary;
+            border-color:$secondary;
+        }
+        &.btn--tertiary{
+            color:$primary;
+            border-color:$dark-gray;
+            &:hover{
+                border-color:$darkest-gray;
+            }
+            &:active{
+                border-color:$black-60;
+            }
+        }
+        &.btn--reversed{
+            border-color:$white-60;
+            color:$white;
+            &:hover{
+                color:$primary;
+            }
+        }
+        &:active{
+            border-width:1px !important;
+        }
+    }
+    &.btn--link{
+        background:none;
+        &:hover{
+            box-shadow: none;
+            background:rgba($black, 0.1);
+        }
+    }
+    &.btn--icon{
+        min-width:0;
+        padding:0;
+        height:auto;
+        background:none;
+        [class*="icon-"]{
+            margin:0;
+        }
+    }
+    &.btn--toggle{
+        color:$white;
+        &:active{
+            box-shadow: none;
+        }
+        .-on{
+            display: none;
+        }
+        &.is--active{
+            color:$secondary;
+            .-off{
+                display: none;
+            }
+            .-on{
+                display: inline-block;
+            }
+        }
+
+    }
+    &.btn--fav{
+        position: relative;
+        &.is--active{
+            color:$warning;
+            .-off{
+                display: inline-block;
+                position: absolute;
+                top:3px;
+                color:$white;
+            }
+        }
+    }
+}

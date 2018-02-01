@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-linkedin" fill="#FFFFFF">
+            <rect id="Rectangle-15-Copy-2" fill-opacity="0" x="0" y="0" width="24" height="24"></rect>
+            <path d="M4,8.26666667 L7.2,8.26666667 L7.2,20 L4,20 L4,8.26666667 Z M15.7333333,8.26666667 C18.1408,8.26666667 20,10.1802667 20,13.5978667 L20,20 L16.8,20 L16.8,14.0266667 C16.8,12.5333333 16.0672,11.5050667 14.7370667,11.5050667 C13.7184,11.5050667 12.9109333,12.1962667 12.6442667,12.8618667 C12.5536,13.0997333 12.5333333,13.4346667 12.5333333,13.7653333 L12.5333333,20 L9.33333333,20 C9.33333333,20 9.41653333,9.33333333 9.3664,8.26666667 L12.5333333,8.26666667 L12.496,10.4 C12.9813333,9.33333333 13.7525333,8.26666667 15.7333333,8.26666667 Z M5.6,7.2 C4.7163444,7.2 4,6.4836556 4,5.6 C4,4.7163444 4.7163444,4 5.6,4 C6.4836556,4 7.2,4.7163444 7.2,5.6 C7.2,6.4836556 6.4836556,7.2 5.6,7.2 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

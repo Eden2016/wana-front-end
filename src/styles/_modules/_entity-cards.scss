@@ -1,0 +1,53 @@
+.entity-card{
+    margin-top:$spacing-s;
+    &:nth-child(-n+1){
+        margin-top:0;
+    }
+    .card{
+        padding:$spacing-s;
+        overflow: hidden;
+        position: relative;
+        .entity__image{
+            margin-right:$spacing-s;
+            float:left;
+        }
+        .group__info{
+            width:calc(100% - 48px - $grid-unit);
+            display: block;
+            float:left;
+            margin-top:$grid-unit;
+        }
+        .entity__ops{
+            position: absolute;
+            top:$grid-unit/2;
+            right:$spacing-xs;
+            opacity: 0;
+            .icon-more{
+                color:$black-60;
+            }
+            &.is--active{
+                opacity: 1;
+            }
+            &:hover{
+                cursor: pointer;
+                .icon-more{
+                    color:$black;
+                }
+            }
+        }
+    }
+    &:hover{
+        .entity__ops{
+            opacity: 1;
+        }
+    }
+}
+
+@include medium(){
+    .entity-card{
+        margin-top:$spacing-s;
+        &:nth-child(-n+2){
+            margin-top:0;
+        }
+    }
+}

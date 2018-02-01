@@ -1,0 +1,32 @@
+.bar{
+    width:100%;
+    background-color:$white;
+    box-sizing: border-box;
+    border-bottom:1px solid $light-gray;
+    &.bar--l{
+        height:96px;
+        &.bar--overlap{
+            margin-top:-48px;
+        }
+    }
+    &.bar--panel{
+        box-shadow: $boxShadow-s;
+    }
+    &.bar--tabs{
+        position: relative;
+        &::after{
+            content:'';
+            width:60px;
+            height:100%;
+            display: block;
+            position: absolute;
+            top:0;
+            right:0;
+            z-index: 1;
+            background-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+        }
+    }
+    &.card{
+        border:none;
+    }
+}

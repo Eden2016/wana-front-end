@@ -1,0 +1,82 @@
+.table{
+    width:100%;
+    text-align: left;
+    margin-bottom:$spacing-l;
+    thead{
+        tr{
+            th{
+                min-width:80px;
+                padding:0 $spacing-s $grid-unit $spacing-s;
+                text-transform: uppercase;
+                letter-spacing: 0.4px;
+                font-size:0.75em;
+                &.sort{
+                    &::after{
+                        content:'';
+                        display: none;
+                        width:9px;
+                        height:9px;
+                        left:$grid-unit/2;
+                        position: relative;
+                        background-image:url('/assets/img/caret-thick-purple.svg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 9px;
+                    }
+                    &.sort--asc, &.sort--desc{
+                        color:$primary;
+                        &::after{
+                            display: inline-block;
+                        }
+                        &:hover{
+                            color:$primary;
+                        }
+                    }
+                    &.sort--desc{
+                        &::after{
+                            transform: rotate(0deg);
+                        }
+                    }
+                    &.sort--asc{
+                        &::after{
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        color:$black;
+                    }
+                }
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                font-size:0.94em;
+                min-width:80px;
+                color:$black;
+            }
+        }
+    }
+    &.table--cards{
+        border-spacing: 0 $grid-unit;
+        border-collapse: separate;
+        box-sizing: border-box;
+        tbody{
+            tr{
+                td{
+                    vertical-align: middle;
+                    padding:$spacing-s;
+                    background-color:$white;
+                    &:first-child{
+                        border-radius:$borderRadius-m 0 0 $borderRadius-m;
+                    }
+                    &:last-child{
+                        border-radius:0 $borderRadius-m $borderRadius-m 0;
+                    }
+                }
+            }
+        }
+    }
+}

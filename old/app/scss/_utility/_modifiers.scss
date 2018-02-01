@@ -1,0 +1,469 @@
+//===============================//
+//===== Universal Overrides =====//
+//===============================//
+
+//=== Visibility
+.-startsHidden{
+    display:none;
+}
+.-hidden{
+    display:none !important;
+}
+.-visible{
+    display:block !important;
+}
+
+//=== Display Overrides
+.-disp-block{
+    display:block !important;
+}
+.-disp-ib{
+    display:inline-block !important;
+    vertical-align: middle;
+}
+.-disp-inline{
+    display:inline !important;
+}
+
+//=== Percentage Width
+.-width-100{ width:100% !important; }
+.-width-95{ width:95% !important; }
+.-width-90{ width:90% !important; }
+.-width-85{ width:85% !important; }
+.-width-80{ width:80% !important; }
+.-width-75{ width:75% !important; }
+.-width-70{ width:70% !important; }
+.-width-65{ width:65% !important; }
+.-width-60{ width:60% !important; }
+.-width-55{ width:55% !important; }
+.-width-50{ width:50% !important; }
+.-width-45{ width:45% !important; }
+.-width-40{ width:40% !important; }
+.-width-35{ width:35% !important; }
+.-width-30{ width:30% !important; }
+.-width-25{ width:25% !important; }
+.-width-20{ width:20% !important; }
+.-width-15{ width:15% !important; }
+.-width-10{ width:10% !important; }
+.-width-5{ width:5% !important; }
+
+
+//=====================//
+//===== Alignment =====//
+//=====================//
+
+//=== Horizontal Alignment (Text)
+.-align-left{
+    text-align:left !important;
+}
+.-align-right{
+    text-align:right !important;
+}
+.-align-center{
+    text-align:center !important;
+}
+
+//=== Vertical Alignment
+.-valign-t{
+    vertical-align: top !important;
+}
+.-valign-m{
+    vertical-align: middle !important;
+}
+.-valign-b{
+    vertical-align: bottom !important;
+}
+
+//=== Float Overrides
+.-float-left {
+    float: left !important;
+}
+.-float-right {
+    float: right !important;
+}
+
+
+//=============================//
+//===== Background Colors =====//
+//=============================//
+
+.-bg-primary{
+    background-color: $primary !important;
+};
+.-bg-primary-80{
+    background-color: $primary-80 !important;
+};
+.-bg-primary-60{
+    background-color: $primary-60 !important;
+};
+.-bg-primary-40{
+    background-color: $primary-40 !important;
+};
+.-bg-primary-20{
+    background-color: $primary-20 !important;
+};
+
+//=== Secondary
+.-bg-secondary{
+    background-color: $secondary !important;
+};
+.-bg-secondary-80{
+    background-color: $secondary-80 !important;
+};
+.-bg-secondary-60{
+    background-color: $secondary-60 !important;
+};
+.-bg-secondary-40{
+    background-color: $secondary-40 !important;
+};
+.-bg-secondary-20{
+    background-color: $secondary-20 !important;
+};
+
+//=== Tertiary
+.-bg-tertiary{
+    background-color: $tertiary !important;
+};
+.-bg-tertiary-80{
+    background-color: $tertiary-80 !important;
+};
+.-bg-tertiary-60{
+    background-color: $tertiary-60 !important;
+};
+.-bg-tertiary-40{
+    background-color: $tertiary-40 !important;
+};
+.-bg-tertiary-20{
+    background-color: $tertiary-20 !important;
+};
+
+//=== Negative
+.-bg-warning{
+    background-color: $warning !important;
+};
+.-bg-warning-80{
+    background-color: $warning-80 !important;
+};
+.-bg-warning-60{
+    background-color: $warning-60 !important;
+};
+.-bg-warning-40{
+    background-color: $warning-40 !important;
+};
+.-bg-warning-20{
+    background-color: $warning-20 !important;
+};
+
+//=== Gray
+.-bg-lightest-gray{
+    background-color:$lightest-gray !important;
+};
+.-bg-light-gray{
+    background-color:$light-gray !important;
+};
+.-bg-gray{
+    background-color: $gray !important;
+};
+.-bg-dark-gray{
+    background-color: $dark-gray !important;
+};
+.-bg-darkest-gray{
+    background-color: $darkest-gray !important;
+};
+
+//=== White
+.-bg-white{
+    background-color: $white !important;
+};
+.-bg-white-80{
+    background-color: $white-80 !important;
+};
+.-bg-white-60{
+    background-color: $white-60 !important;
+};
+.-bg-white-40{
+    background-color: $white-40 !important;
+};
+.-bg-white-20{
+    background-color: $white-20 !important;
+};
+.-bg-white-10{
+    background-color: $white-10 !important;
+};
+
+//=== Black
+.-bg-black{
+    background-color: $black !important;
+};
+.-bg-black-80{
+    background-color: $black-80 !important;
+};
+.-bg-black-60{
+    background-color: $black-60 !important;
+};
+.-bg-black-40{
+    background-color: $black-40 !important;
+};
+.-bg-black-20{
+    background-color: $black-20 !important;
+};
+.-bg-black-10{
+    background-color: $black-10 !important;
+};
+
+//=======================//
+//===== Text Colors =====//
+//=======================//
+
+//=== Primary
+.-color-primary{
+    color: $primary !important;
+}
+.-color-primary-80{
+    color: $primary-80 !important;
+}
+.-color-primary-60{
+    color: $primary-60 !important;
+}
+.-color-primary-40{
+    color: $primary-40 !important;
+}
+.-color-primary-60{
+    color: $primary-20 !important;
+}
+
+//=== Secondary
+.-color-secondary{
+    color: $secondary !important;
+}
+.-color-secondary-80{
+    color: $secondary-80 !important;
+}
+.-color-secondary-60{
+    color: $secondary-60 !important;
+}
+.-color-secondary-40{
+    color: $secondary-40 !important;
+}
+.-color-secondary-60{
+    color: $secondary-20 !important;
+}
+
+//=== Tertiary
+.-color-tertiary{
+    color: $tertiary !important;
+}
+.-color-tertiary-80{
+    color: $tertiary-80 !important;
+}
+.-color-tertiary-60{
+    color: $tertiary-60 !important;
+}
+.-color-tertiary-40{
+    color: $tertiary-40 !important;
+}
+.-color-tertiary-60{
+    color: $tertiary-20 !important;
+}
+
+//=== Warning
+.-color-warning{
+    color: $warning !important;
+}
+.-color-warning-80{
+    color: $warning-80 !important;
+}
+.-color-warning-60{
+    color: $warning-60 !important;
+}
+.-color-warning-40{
+    color: $warning-40 !important;
+}
+.-color-warning-60{
+    color: $warning-20 !important;
+}
+
+//=== Gray
+.-color-white{
+    color: $white !important;
+}
+.-color-light-gray{
+    color: $light-gray !important;
+}
+.-color-gray{
+    color:$gray !important;
+}
+.-color-dark-gray{
+    color: $dark-gray !important;
+}
+.-color-darkest-gray{
+    color: $darkest-gray !important;
+}
+.-color-black{
+    color: $black !important;
+}
+
+//=== Black
+.-color-black-80{
+    color: rgba($black, 0.8) !important;
+}
+.-color-black-60{
+    color: rgba($black, 0.6) !important;
+}
+.-color-black-40{
+    color: rgba($black, 0.4) !important;
+}
+.-color-black-20{
+    color: rgba($black, 0.2) !important;
+}
+
+
+//======================//
+//===== Text Sizes =====//
+//======================//
+
+.-fontSize-xs{
+    font-size: $fs-xs !important;
+    line-height:$line-height !important;
+}
+.-fontSize-s{
+    font-size: $fs-s !important;
+    line-height:$line-height !important;
+}
+.-fontSize-m{
+    font-size: $fs-m !important;
+    line-height:$line-height !important;
+}
+.-fontSize-l{
+    font-size: $fs-l !important;
+    line-height:$line-height !important;
+}
+.-fontSize-xl{
+    font-size: $fs-xl !important;
+    line-height:$line-height !important;
+}
+.-fontSize-xxl{
+    font-size: $fs-xxl !important;
+    line-height:$line-height !important;
+}
+
+
+//=======================//
+//===== Text Styles =====//
+//=======================//
+
+//=== Text Styles
+.-textStyle-caps{
+    text-transform: uppercase !important;
+}
+
+//=== Font Weights
+.-fontWeight-1{
+    font-weight:400 !important;
+}
+.-fontWeight-2{
+    font-weight:500 !important;
+}
+.-fontWeight-3{
+    font-weight:600 !important;
+}
+.-fontWeight-4{
+    font-weight:700 !important;
+}
+
+
+//===================//
+//===== Borders =====//
+//===================//
+
+//=== No Border
+.-border-none {
+    border:none !important;
+}
+
+//=== Border Widths
+.-border-1{
+    border-width:1px;
+}
+.-border-2{
+    border-width:2px;
+}
+
+//=== Border Styles
+.-border-solid{
+    border-style:solid !important;
+}
+.-border-dashed{
+    border-style:dashed !important;
+}
+
+//=== Border Colors
+.-border-lightest{
+    border-color:$black-10 !important;
+}
+.-border-light{
+    border-color:$black-20 !important;
+}
+.-border-medium{
+    border-color:$black-40 !important;
+}
+.-border-dark{
+    border-color:$black-60 !important;
+}
+.-border-darkest{
+    border-color:$black-80 !important;
+}
+.-border-primary{
+    border-color:$primary !important;
+}
+.-border-secondary{
+    border-color:$secondary !important;
+}
+.-border-tertiary{
+    border-color:$tertiary !important;
+}
+.-border-warning{
+    border-color:$warning !important;
+}
+
+//=== Border Sides
+.-border-t{
+    border-bottom:none !important;
+    border-right:none !important;
+    border-left:none !important;
+}
+.-border-r{
+    border-bottom:none !important;
+    border-left:none !important;
+    border-top:none !important;
+}
+.-border-b{
+    border-left:none !important;
+    border-top:none !important;
+    border-right:none !important;
+}
+.-border-l{
+    border-top:none !important;
+    border-right:none !important;
+    border-bottom:none !important;
+}
+.-border-tb{
+    border-left:none !important;
+    border-right:none !important;
+}
+.-border-lr{
+    border-top:none !important;
+    border-bottom:none !important;
+}
+
+
+//===================//
+//===== Shadows =====//
+//===================//
+
+.-shadow-m{
+    box-shadow:0 0 5px $black-10;
+}
+.-shadow-l{
+    box-shadow:0 0 24px $black-80;
+}

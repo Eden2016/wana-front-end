@@ -1,0 +1,350 @@
+.dropdown{
+    display: inline-block;
+    position: relative;
+    &::after{
+        content:'';
+        width:24px;
+        height:24px;
+        display: inline-block;
+        opacity:0.8;
+        vertical-align: middle;
+        background-image:url('/assets/img/caret-thick-black.svg');
+        @include smallCaret();
+    }
+    &:hover{
+        &::after{
+            opacity:1;
+        }
+        .avatar{
+            transform: scale(1.05);
+        }
+    }
+    &.dropdown--no-caret{
+        &::after{
+            display: none;
+        }
+    }
+    .dropdown__box{
+        pointer-events: none;
+        visibility:hidden;
+        opacity: 0;
+        display: table;
+        position: absolute;
+        right:0;
+        transform:translate(0, $grid-unit) scale(0.95);
+        transform-origin: top;
+        border-radius: $borderRadius-m;
+        box-shadow:$boxShadow-l;
+        background-color:$white;
+        transition:all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);;
+        &[data-position="right"]{
+            right:0;
+        }
+        &[data-position="center"]{
+            left:50%;
+            transform: translate(-50%, $grid-unit);
+        }
+        &[data-position="left"]{
+            left:0;
+        }
+        .dropdown__box-inner{
+            padding:$spacing-xs $spacing-m;
+        }
+    }
+    &.is--active{
+        .dropdown__box{
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+            transform:translate(0, 0) scale(1);
+            &[data-position="center"]{
+                transform: translate(-50%, 0) scale(1);
+            }
+        }
+    }
+    &.dropdown--up{
+        .dropdown__box{
+            bottom:100%;
+        }
+    }
+    &.dropdown--over{
+        .dropdown__box{
+            top:4px;
+        }
+    }
+}
+
+.-reversed{
+    .dropdown{
+        &::after{
+            background-image:url('/assets/img/caret-thick-white.svg');
+        }
+    }
+}
+
+.account-dropdown {
+
+  .dropdown__box {
+    margin-top: 1.5em;
+    margin-right: -1em;
+  }
+
+  .account-dropdown-menu {
+    width: 16em;
+  }
+  .account-dropdown-header {
+    border-radius: 4px;
+    background-size: cover;
+    padding: 0.5em 1.5em;
+  }
+  .header-profile-btn {
+    padding-bottom: 2.5em;
+
+    .btn.btn--primary.btn--block {
+      width: 8em;
+      min-width: 0;
+      font-size: 85%;
+      min-width: 0;
+      min-height: 0;
+      height: 2em;
+      line-height: 1.8;
+      background-color: white;
+      color:#5F70D0;
+      margin: .5em 0 0 auto;
+    }
+  }
+  p.header-welcome {
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 125%;
+  }
+  p {
+    text-align: left;
+    font-size: 85%;
+    line-height: .9;
+    padding-bottom: .5em;
+    color: white;
+  }
+  .account-dropdown-menu {
+    ul {
+      padding: 0.5em 1.5em;
+      padding-top: 1em;
+      li {
+        cursor: pointer;
+        font-size: 110%;
+        padding-bottom: .75em;
+        font-weight: bold;
+        text-align: left;
+        display: block;
+
+        a { color: rgb(55, 59, 77); }
+
+        &.break {
+          border-bottom: 1px solid lightgray;
+          margin-bottom: .8em;
+        }
+
+        &:hover {
+          a { color: #53BAC8; }
+          color: #53BAC8;
+        }
+      }
+    }
+  }
+}
+
+.exchange-dropdown {
+  .exc-ctr-list {
+    .exc-ctr-appt {
+      padding-bottom: 3px;
+      margin-bottom: 2px;
+      border-bottom: 1px solid rgb(227, 228, 236);
+      display: flex !important;
+
+      .appt-details {
+        flex-grow: 2;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: -5px;
+        .appt-dates {
+          text-align: center;
+          font-weight: bold;
+        }
+        .appt-byline {
+          text-align: center;
+          font-size: 12px;
+          span { font-weight: bold; }
+        }
+      }
+
+      p {
+        color: black;
+        text-align: left;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+  .dropdown__box {
+    margin-top: 2em;
+  }
+
+  .exchange-dropdown-header {
+    display:flex;
+    margin: .5em 1em;
+
+    .exchange-header-title {
+      display: flex;
+      flex-grow: 3;
+      h3 {
+        color: #444;
+        font-size: 90%;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: .9em;
+      }
+      svg {
+        fill: #444;
+        margin-top: .5em;
+      }
+    }
+    .btn.btn--primary.btn--block {
+      min-width: 0;
+      font-size: 85%;
+      min-width: 0;
+      min-height: 0;
+      background-color: white;
+      color:#5F70D0;
+      border: 1px solid #5F70D0;
+      margin: .5em 0 0 auto;
+      height: 1.7em;
+      line-height: 1.5;
+      width: 7em;
+      padding: 0;
+    }
+  }
+
+  .exchange-dropdown-menu {
+    width: 20em;
+    min-height: 15em;
+    display: flex;
+    flex-direction: column;
+  }
+  .exchange-dropdown-list {
+    padding: 1em;
+    background: whitesmoke;
+    border-top: 1px solid gainsboro;
+    flex-grow: 3;
+
+    .no-transactions {
+      text-align: center;
+    }
+  }
+}
+.exchange-dropdown-wrapper {
+  display:flex;
+}
+
+.notifications-wrap {
+  display: flex;
+}
+
+.notifications-dropdown {
+
+  .dropdown__box {
+    margin-top: 2em;
+  }
+
+  .notifications-dropdown-header {
+    display:flex;
+    margin: .5em 1em;
+
+    .notifications-header-title {
+      display: flex;
+      flex-grow: 3;
+      h3 {
+        text-align: left;
+        color: #444;
+        font-size: 90%;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: .9em;
+        min-width: 120px;
+      }
+      svg {
+        fill: #444;
+        margin-top: .5em;
+      }
+    }
+    .btn.btn--primary.btn--block {
+      min-width: 0;
+      font-size: 85%;
+      min-width: 0;
+      min-height: 0;
+      background-color: white;
+      color:#5F70D0;
+      border: 1px solid #5F70D0;
+      margin: .5em 0 0 auto;
+      height: 1.7em;
+      line-height: 1.5;
+      width: 7em;
+      padding: 0;
+    }
+  }
+
+  .notifications-dropdown-menu {
+    width: 20em;
+    min-height: 15em;
+    display: flex;
+    flex-direction: column;
+  }
+  .notifications-dropdown-list {
+    background: whitesmoke;
+    border-top: 1px solid gainsboro;
+    flex-grow: 3;
+
+    .no-transactions {
+      text-align: center;
+    }
+
+    ul {
+      padding: 0 16px;
+      text-align: left;
+
+      li {
+        border-bottom: 1px solid #e1e7e9;
+        width: 100%;
+        position: relative;
+        padding-top: 8px;
+      }
+
+      h5 {
+        color: #5e6fd1;
+        font-size: 14px;
+        margin: 10px 0;
+      }
+
+      span.unread {
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        background-color: #5e6fd1;
+        top: 50%;
+        right: 10px;
+        position: absolute;
+        transform: translate(0, -50%);
+      }
+
+      .notification-header {
+        color: #383b4c;
+        font-size: 16px;
+      }
+      .notification-time {
+        color: #989aa4;
+        font-size: 12px;
+      }
+    }
+  }
+}

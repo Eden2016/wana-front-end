@@ -1,0 +1,52 @@
+.toggle{
+    &.toggle--tabs{
+        overflow: hidden;
+        vertical-align: middle;
+        .toggle__tab{
+            display: block;
+            float:left;
+            margin-left:-1px;
+            &:first-child{
+                margin-left:0;
+            }
+            input{
+                position: absolute;
+                top:-9999em;
+                left:-9999em;
+                visibility: hidden;
+                &:checked + span{
+                    color:$primary;
+                    border-color:$primary;
+                    z-index: 1;
+                    background-color: $primary-20;
+                }
+            }
+            span{
+                min-width:80px;
+                display: block;
+                padding:0 $grid-unit;
+                font-size:0.75em;
+                font-weight: 600;
+                text-align: center;
+                border:1px solid $gray;
+                position: relative;
+            }
+            &:first-child{
+                span{
+                    border-radius:4px 0 0 4px;
+                }
+            }
+            &:last-child{
+                span{
+                    border-radius:0 4px 4px 0;
+                }
+            }
+            &:hover{
+                span{
+                    cursor: pointer;
+                    border-color:$dark-gray;
+                }
+            }
+        }
+    }
+}

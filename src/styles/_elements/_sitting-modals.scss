@@ -1,0 +1,60 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(125, 125, 125, 0.5);
+  z-index: 99999;
+}
+
+.sitting-datepicker {
+  width: 250px;
+  input {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 1px solid #5F70D0;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}
+
+.sitting-modal {
+  position: fixed;
+  top: 50%;
+  left: 150px;
+  right: 150px;
+  transform: translate(0, -50%);
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid #5F70D0;
+  border-radius: 4px;
+  z-index: 999999;
+  text-align: center;
+
+  textarea {
+    resize: none;
+    height: 50px;
+    width: 50%;
+  }
+
+  .submit-button {
+    border: 2px solid #5F70D0;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5F70D0;
+    margin-left: 6px;
+    outline: none;
+  }
+
+  .submit-button:hover {
+    background-color: #5F70D0;
+    color: #fff;
+  }
+}

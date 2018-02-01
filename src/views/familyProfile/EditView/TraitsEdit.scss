@@ -1,0 +1,25 @@
+.traitsEdit__container {
+  display: flex;
+}
+
+.box {
+  border: 1px solid #eee;
+  width: 100%;
+  height: 100px;
+  padding: 1em;
+}
+.pane__left {
+  flex: 1;
+}
+
+.pane__right{
+  flex: 1;
+}
+.pane__right .box {
+  border-left: none;
+}
+
+.pane__right .box:not(:first-child),
+.pane__left .box:not(:first-child){
+  border-top: none;
+}

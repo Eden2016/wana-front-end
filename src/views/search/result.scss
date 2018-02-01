@@ -1,0 +1,25 @@
+.checkbox-group.checkbox-group--pills .checkbox input {
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+    visibility: hidden;
+}
+
+@media (max-width: 770px){
+  .panel__wrapper .panel.panel__sidebar {
+    width: 100% !important;
+    position: static !important;
+  }
+  .panel__wrapper .panel.panel__sidebar, .panel__wrapper .panel{
+    position: static !important;
+  }
+}
+
+#resultsMap{
+  height: 400px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-fb" fill="#FFFFFF">
+            <rect id="Rectangle-15" fill-opacity="0" x="0" y="0" width="24" height="24"></rect>
+            <path d="M17,7 L15,7 C14.7,7 14,7.472 14,8 L14,10 L17,10 L17,13 L14,13 L14,20 L11,20 L11,13 L8,13 L8,10 L11,10 L11,8 C11,5.794 12.961,4 15.062,4 L17,4 L17,7 Z" id="Shape" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

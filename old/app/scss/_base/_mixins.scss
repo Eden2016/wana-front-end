@@ -1,0 +1,42 @@
+//=== Breakpoints ===//
+//===================//
+
+@mixin small(){
+    @media only screen and (min-width: #{$breakpoint-s}){
+        @content;
+    }
+}
+@mixin medium(){
+    @media only screen and (min-width: #{$breakpoint-m}){
+        @content;
+    }
+}
+@mixin mediumLarge(){
+    @media only screen and (min-width: #{$breakpoint-ml}){
+        @content;
+    }
+}
+@mixin large(){
+    @media only screen and (min-width: #{$breakpoint-l}){
+        @content;
+    }
+}
+@mixin xlarge(){
+    @media only screen and (min-width: #{$breakpoint-xl}){
+        @content;
+    }
+}
+@mixin xxlarge(){
+    @media only screen and (min-width: #{$breakpoint-xxl}){
+        @content;
+    }
+}
+
+//=== Icons ===//
+//=============//
+
+@mixin smallCaret(){
+    background-size:10px 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

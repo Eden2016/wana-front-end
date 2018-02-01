@@ -1,0 +1,96 @@
+.modal {
+  position: absolute;
+  background: $white;
+  border-radius: $borderRadius-m;
+  outline: none;
+  margin: 8vw 0;
+  width: 80vw;
+  max-width:768px;
+  left:50%;
+  transform:translateX(-50%);
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.15);
+  &.modal-active {
+
+  }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: scroll;
+  background-color: rgba($primary, 0.8);
+  z-index: 10;
+}
+.modal-content {
+  &.header {
+    display: flex;
+    padding: 1.5vw 2vw;
+    align-items: center;
+    .modal__title{
+      width:calc(100% - 24px);
+      .list{
+        display: inline-block;
+      }
+    }
+    .modal__close{
+      width:24px;
+    }
+    .box__icon{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h3 {
+      padding-left: 2vw;
+      vertical-align: middle;
+    }
+    img {
+      border-radius: 100px;
+      width: 40px;
+      height: 40px;
+    }
+    p {
+      flex-grow: 2;
+      text-align: right;
+    }
+  }
+  &.main {
+    padding: 1vw 2vw;
+    background: #F2F4F6;
+    min-height: 10vw;
+  }
+  &.footer {
+    padding: 1vw 2vw;
+    min-height: 2vw;
+  }
+}
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.ReactModalPortal > * {
+    // When the modal is closed, overlay div has no css class
+    // This selector should be overridden by the `&--after-open` class below
+    opacity: 0;
+}
+.ReactModal__Content{
+  transition: transform 0.1s ease-in-out;
+  transform:translate(-50%, 0);
+}
+.ReactModal__Overlay {
+    transition: opacity 0.1s ease-in-out;
+    &--after-open {
+        opacity: 1;
+        .ReactModal__Content{
+          transform:translate(-50%, 5vw);
+        }
+    }
+    &--before-close {
+        opacity: 0;
+        .ReactModal__Content{
+          transform:translate(-50%, 0);
+        }
+    }
+}

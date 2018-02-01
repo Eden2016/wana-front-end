@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Atoms/Icons/Youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.522,15.634958 L9.52125,8.843871 L16.00575,12.251122 L9.522,15.634958 Z M23.76,7.6670815 C23.76,7.6670815 23.52525,6.0015995 22.806,5.268183 C21.89325,4.3051495 20.87025,4.3006175 20.4015,4.244724 C17.043,4 12.00525,4 12.00525,4 L11.99475,4 C11.99475,4 6.957,4 3.5985,4.244724 C3.129,4.3006175 2.10675,4.3051495 1.19325,5.268183 C0.474,6.0015995 0.24,7.6670815 0.24,7.6670815 C0.24,7.6670815 0,9.6233615 0,11.5788865 L0,13.412805 C0,15.369085 0.24,17.32461 0.24,17.32461 C0.24,17.32461 0.474,18.990092 1.19325,19.723508 C2.10675,20.686542 3.306,20.656329 3.84,20.756787 C5.76,20.9425955 12,21 12,21 C12,21 17.043,20.992447 20.4015,20.747723 C20.87025,20.691074 21.89325,20.686542 22.806,19.723508 C23.52525,18.990092 23.76,17.32461 23.76,17.32461 C23.76,17.32461 24,15.369085 24,13.412805 L24,11.5788865 C24,9.6233615 23.76,7.6670815 23.76,7.6670815 L23.76,7.6670815 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms/Icons/Youtube">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Youtube" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="Atoms/Colors/Black" mask="url(#mask-2)" fill="#333333">
+                <rect id="Rectangle-5-Copy" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

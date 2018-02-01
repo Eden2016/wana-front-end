@@ -1,0 +1,645 @@
+// Base
+@import "_base/app";
+@import "_base/reset";
+@import "_base/settings";
+@import "_base/mixins";
+@import "_base/color";
+@import "_base/typography";
+
+// Layout
+@import "_layout/grid";
+@import "_layout/layout";
+
+// Elements
+@import "_elements/accordions";
+@import "_elements/banners";
+@import "_elements/bars";
+@import "_elements/buttons";
+@import "_elements/cards";
+@import "_elements/comments";
+@import "_elements/date-groups";
+@import "_elements/dividers";
+@import "_elements/drag-n-drop";
+@import "_elements/dropdowns";
+@import "_elements/icons";
+@import "_elements/modals";
+@import "_elements/images";
+@import "_elements/items";
+@import "_elements/info-boxes";
+@import "_elements/inputs";
+@import "_elements/links";
+@import "_elements/lists";
+@import "_elements/pagination";
+@import "_elements/selects";
+@import "_elements/tables";
+@import "_elements/tabs";
+@import "_elements/tags";
+@import "_elements/toggles";
+@import "_elements/text-groups";
+@import "_elements/wells";
+@import "_elements/sitting-buttons";
+@import "_elements/sitting-modals";
+@import "_elements/add-card-modal";
+@import "_elements/payment-card";
+@import "_elements/error-popup.scss";
+
+// Modules
+@import "_modules/activity-cards";
+@import "_modules/entity-groups";
+@import "_modules/entity-cards";
+@import "_modules/family-cards";
+@import "_modules/form-groups";
+@import "_modules/header";
+@import "_modules/profile";
+@import "_modules/styleguide";
+@import "_modules/landing-page";
+
+// Utility
+@import "_utility/modifiers";
+@import "_utility/spacing";
+@import "_utility/utilities";
+
+/* TODO - organize & split up below misc css into components. */
+
+/* Token */
+.bootstrap-tokenizer .token {
+  background-color: #e7f4ff;
+  border: 0;
+  border-radius: 2px;
+  color: #1f8dd6;
+  display: inline-block;
+  line-height: 1em;
+  margin: 0 3px 3px 0;
+  padding: 4px 7px;
+  position: relative;
+}
+.bootstrap-tokenizer .token-disabled {
+  background-color: #ddd;
+  color: #888;
+  pointer-events: none;
+}
+.bootstrap-tokenizer .token-removeable {
+  cursor: pointer;
+  padding-right: 21px;
+}
+.bootstrap-tokenizer .token-selected {
+  background-color: #1f8dd6;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.bootstrap-tokenizer .token .close-button {
+  bottom: 0;
+  padding: 3px 7px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bootstrap-typeahead .dropdown-menu > li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bootstrap-typeahead .dropdown-menu > li a:focus {
+  outline: none;
+}
+
+.bootstrap-typeahead .dropdown-menu-justify {
+  right: 0;
+}
+
+/* Hide IE's native "clear" button */
+.bootstrap-typeahead input[type=text]::-ms-clear {
+  display: none;
+}
+
+.bootstrap-typeahead-menu-paginator {
+  text-align: center;
+}
+
+/* Input sizes */
+.bootstrap-tokenizer {
+  padding-bottom: 2px;
+  padding-top: 5px;
+}
+
+.input-sm.bootstrap-tokenizer {
+  padding-bottom: 1px;
+  padding-top: 4px;
+}
+
+.input-lg.bootstrap-tokenizer {
+  padding-bottom: 6px;
+  padding-top: 9px;
+}
+
+.bootstrap-tokenizer-input {
+  margin: 1px 0 4px;
+}
+
+.has-aux {
+  padding-right: 32px;
+}
+
+.has-aux.input-lg {
+  padding-right: 42px;
+}
+
+/* Fix styles when used with input-group */
+.input-group .bootstrap-typeahead:first-child .form-control {
+  border-radius: 4px 0 0 4px;
+}
+.input-group .bootstrap-typeahead:last-child .form-control {
+  border-radius: 0 4px 4px 0;
+}
+
+.bootstrap-typeahead-loader {
+  -webkit-animation: loader-animation 600ms infinite linear;
+  -o-animation: loader-animation 600ms infinite linear;
+  animation: loader-animation 600ms infinite linear;
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  border-top-color: #1f8dd6;
+  display: block;
+  height: 16px;
+  right: 12px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  width: 16px;
+}
+
+.loader-lg {
+  height: 20px;
+  margin-top: -10px;
+  right: 16px;
+  width: 20px;
+}
+
+.loader-sm {
+  right: 10px;
+}
+
+@keyframes loader-animation {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes loader-animation {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+.bootstrap-typeahead-clear-button {
+  outline: none;
+  margin-top: -12px;
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  z-index: 1;
+}
+
+.close-lg {
+  font-size: 24px;
+  margin-top: -15px;
+  right: 15px;
+}
+
+.rbt {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  cursor: text;
+  height: auto;
+}
+
+.rbt.focus {
+  /* Mimic focus state */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  border-color: #66afe9;
+  outline: 0;
+}
+
+.rbt-menu {
+  margin: 3px -1px 0;
+}
+
+.rbt-menu > li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rbt-menu > li a:focus {
+  outline: none;
+}
+
+.rbt-menu-paginator {
+  text-align: center;
+}
+
+.rbt.dropup .rbt-menu {
+  margin-bottom: 3px;
+}
+
+.rbt .dropdown-menu-justify {
+  right: 0;
+}
+
+.rbt input[type=text]::-ms-clear {
+  /* Hide IE's native "clear" button */
+  display: none;
+}
+
+.rbt-input {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.rbt-input-multi {
+  margin-bottom: -4px;
+  margin-top: -1px;
+}
+
+.rbt-input-multi .rbt-input-main {
+  margin: 1px 0 4px;
+}
+
+.rbt-input-main, .rbt-input-hint {
+  /* Set input height for cross-browser consistency */
+  height: 20px;
+}
+
+.rbt-token {
+  background-color: #e7f4ff;
+  border: 0;
+  border-radius: 2px;
+  color: #1f8dd6;
+  display: inline-block;
+  line-height: 1em;
+  margin: 0 3px 3px 0;
+  padding: 4px 7px;
+  position: relative;
+}
+
+.rbt-token-disabled {
+  background-color: #ddd;
+  color: #888;
+  pointer-events: none;
+}
+
+.rbt-token-removeable {
+  cursor: pointer;
+  padding-right: 21px;
+}
+
+.rbt-token-selected {
+  background-color: #1f8dd6;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.rbt-token-close-button {
+  bottom: 0;
+  padding: 3px 7px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.rbt-close {
+  outline: none;
+  z-index: 1;
+}
+
+.rbt-close-lg {
+  font-size: 24px;
+}
+
+.rbt-loader {
+  -webkit-animation: loader-animation 600ms infinite linear;
+  -o-animation: loader-animation 600ms infinite linear;
+  animation: loader-animation 600ms infinite linear;
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  border-top-color: #1f8dd6;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+.rbt-loader-lg {
+  height: 20px;
+  width: 20px;
+}
+
+.rbt-aux {
+  margin-left: 5px;
+}
+
+.rbt-aux .rbt-close {
+  margin-top: -12px;
+  position: relative;
+  top: 50%;
+}
+
+.rbt-aux .rbt-close-lg {
+  margin-top: -15px;
+}
+
+.rbt-aux .rbt-loader {
+  margin-top: -8px;
+  position: relative;
+  top: 50%;
+}
+
+.rbt-aux .rbt-loader-lg {
+  margin-top: -10px;
+}
+
+.input-lg .rbt-input-main,
+.input-lg .rbt-input-hint,
+.form-control-lg .rbt-input-main,
+.form-control-lg .rbt-input-hint {
+  height: 24px;
+}
+
+.input-sm .rbt-input-main,
+.input-sm .rbt-input-hint,
+.form-control-sm .rbt-input-main,
+.form-control-sm .rbt-input-hint {
+  height: 18px;
+}
+
+@keyframes loader-animation {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes loader-animation {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+
+.modal-form {
+  .Select-menu, .Select-menu:hover {
+    position: fixed;
+    background: transparent;
+  }
+  // TODO - this is not responsive and is a hack because weirdly,
+  // react-select's maintainers don't feel this problem is worth
+  // solving and there's no time atm. --AB, 11/2017
+  // ref: https://github.com/JedWatson/react-select/issues/1085
+  .Select-menu .listbox {
+    min-width: 300px;
+  }
+}
+
+.avatar-form .avatar {
+  margin: 1em !important;
+}
+
+.input.input--text {
+  .input-with-error {
+    input:focus {
+      border-color: red;
+    }
+    .error-msg {
+      margin-top: .25em;
+      display: block;
+      color: red;
+    }
+  }
+}
+
+.errors {
+  font-size: 0.8rem;
+  color: #EE0000;
+  margin-top: 0.25rem;
+  animation: slide-down 0.3s backwards ease-in-out;
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+  }
+}
+
+.checkbox {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  .checkbox__label {
+    padding-left: 0.5em;
+  }
+}
+
+.input--checkbox {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+
+  .checkbox--control {
+    margin-top: 0;
+    zoom:1.3;
+    transform:scale(1.3);
+    -ms-transform:scale(1.3);
+    -webkit-transform:scale(1.3);
+    -o-transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+    -o-transform-origin:0 0;
+    -moz-transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+  }
+  .checkbox--label {
+    display: block;
+    padding-left: 0.5em;
+    line-height: 1;
+    a { color: #5F70D0; &:hover { text-decoration: underline; } }
+  }
+}
+
+
+
+//utility class
+.capitalize { text-transform: capitalize; }
+
+/* Loading animations */
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  transition: opacity .3s linear;
+  opacity: 1;
+}
+
+.fade-exit {
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+}
+
+// Signup
+.signup-wrapper {
+  position: absolute;
+}
+
+
+// account settings
+.account-settings.content__section {
+  background: whitesmoke;
+}
+
+// Points badges
+.appt-points {
+  p {
+    font-size: 12px;
+    border: 1px solid darkslategray;
+    padding: 2px 5px;
+    border-radius: 100px;
+  }
+  &.positive {
+    p {
+      background: #53BAC8;
+      border: 1px solid 53BAC8;
+      color: white;
+    }
+  }
+}
+
+// Offers & Requests
+.sittings-page {
+  .bar.bar--tabs {
+    .tabs__list {
+      display: flex;
+      justify-content: center;
+
+      .tab {
+        margin: .5em 2.5em 1em 2.5em;
+      }
+    }
+  }
+
+  .sittings-content {
+    padding: 1em 2em 5em 2em;
+    background: whitesmoke;
+    height: 50vh;
+  }
+
+  .sittings-list {
+    margin: 0 10vw;
+
+    h3 { margin-top: 2em;}
+  }
+
+  .sittings-list-item {
+    border-color: lightsteelblue;
+    background: white;
+    padding: 1em;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+
+    .left-side {
+      display: flex;
+    }
+    .right-side {
+      display: flex;
+    }
+
+    .avatar, .duration, .appt-points {
+      margin-top: 1.4em !important;
+      margin-right: 1em;
+    }
+    .duration {
+      margin-left: 1em;
+    }
+    .appt-points {
+      margin-top: 1.2em !important;
+      margin-left: .5em;
+    }
+
+  }
+
+  .right-side {
+    margin-top: 1.4em;
+  }
+
+  .name-tag {
+    background: #6071CA;
+    color: white;
+    padding: .1em .4em .2em .3em;
+    border-radius: 2px;
+    margin: 0 .5em;
+    display: inline-block
+  }
+
+  .two-date-spacer {
+    margin-right: .4em;
+    text-align: center;
+    margin-top: .9em;
+    font-size: 200%;
+    margin-bottom: 0;
+  }
+
+  .date-display-box {
+    border: 2px solid lightslategray;
+    border-radius: 4px;
+    margin-right: 1.5em;
+
+    .month {
+      margin-bottom: 0;
+      text-align: center;
+      padding: .2em 1.3em;
+      font-size: 110%;
+    }
+    .day {
+      text-align: center;
+      font-weight: bold;
+      font-size: 250%;
+      margin-bottom: .4em;
+      margin-top: .2em;
+    }
+  }
+
+  .empty-sittings-placeholder {
+    margin: 4em 10em;
+    .content {
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+      p {
+        text-align: center;
+        margin-top: 1em;
+      }
+      .btn {
+        width: 25vw;
+        margin: 0 auto;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

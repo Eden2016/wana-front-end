@@ -1,0 +1,137 @@
+.tabs__list{
+    width:100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    padding-right:60px;
+    .tab{
+        display: inline-block;
+        margin-right:$grid-unit*3;
+        padding:$grid-unit*2 0;
+        box-shadow:inset 0 -3px transparent;
+        color:$black-60;
+        font-weight:500;
+        text-align: center;
+        transition: all 0.1s ease-in-out;
+        box-sizing: border-box;
+        transform:translateY(1px);
+        a{
+            color:$black-60;
+            &:hover{
+                color:$black;
+            }
+        }
+        &:hover{
+            cursor:pointer;
+            color:$black;
+        }
+        &[data-badge]{
+            &::after{
+                content:attr(data-badge);
+                min-width:16px;
+                margin-left:4px;
+                padding:0 3px;
+                line-height:16px;
+                display: inline-block;
+                font-size:12px;
+                border-radius:$borderRadius-m;
+                text-align: center;
+                font-weight:700;
+                border:1px solid $secondary;
+                color:$white;
+                background-color:$secondary;
+                box-sizing: border-box;
+                transform: translateY(-2px);
+            }
+        }
+        &.is--active{
+            color:$primary;
+            box-shadow:inset 0 -3px $primary;
+            a{
+                color:$primary;
+                &:hover{
+                    color:$primary;
+                }
+            }
+            &[data-badge]{
+                &::after{
+                    content:attr(data-badge);
+                    border:1px solid $primary;
+                    background-color:$primary;
+                }
+            }
+        }
+        &:last-child{
+            margin-right:0;
+        }
+    }
+    &.tabs__list--avatars{
+        .tab{
+            margin:0 0 0 -5px;
+            padding:0;
+            box-shadow: none;
+            transform:translateY(0);
+            border-right:1px solid $light-gray;
+            transition: none;
+            .avatar{
+                margin:16px $spacing-m;
+                &::after{
+                    content:'';
+                    width:100%;
+                    height:0;
+                    display: block;
+                    position: absolute;
+                    bottom:-$spacing-s;
+                    background-color:$primary;
+                    opacity: 0;
+                    transition:all 0.1s ease-in-out;
+                }
+            }
+            &.is--active{
+                border-right:none;
+                background-color:$white;
+                .avatar{
+                    width:50px;
+                    height:50px;
+                    border-radius:50%;
+                    margin:15px ($spacing-m - 1px);
+                    &::after{
+                        height:3px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.-reversed{
+    .tabs__list{
+        .tab{
+            color:$white-60;
+            &:hover{
+                color:$white;
+            }
+            &[data-badge]{
+                &::after{
+                    border:1px solid $white-60;
+                    color:$white-80;
+                    background-color:transparent;
+                }
+            }
+            &.is--active{
+                color:$white;
+                box-shadow:inset 0 -3px $white;
+                &[data-badge]{
+                    &::after{
+                        content:attr(data-badge);
+                        color:$primary;
+                        border:1px solid $white;
+                        background-color:$white;
+                    }
+                }
+            }
+        }
+    }
+}

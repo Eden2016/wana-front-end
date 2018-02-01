@@ -1,0 +1,106 @@
+.users__card {
+  width: 230px;
+  align-self: flex-end;
+  pointer-events: all;
+}
+
+.chat__card.users__card {
+  width: 300px;
+}
+
+.users__card--header {
+  color: white;
+  background-color: #5f70d0;
+  border-radius: 5px 5px 0px 0px;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.3em 0;
+  position: relative;
+}
+
+.users__card--body {
+  background: white;
+}
+
+.userRow {
+  padding: 5px;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    background: #eee;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.7em;
+  }
+  span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// new
+.chat__card {
+  display: flex;
+  flex-direction: column;
+  .chat__card--body {
+    flex: 1;
+    background: #fff;
+  }
+}
+.close {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.chat__card--messages {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  .chatLogs {
+    flex: 1;
+    overflow-y: auto;
+  }
+  .chat__card--input {
+    display: flex;
+    input {
+      flex: 1;
+      outline: none;
+      border: none;
+      padding: 7px;
+      background: #e5ecff;
+      font: italic 12px Trebuchet MS;
+    }
+
+    span {
+      padding: 7px 15px;
+      background: #5f70d0;
+      color: white;
+      border-radius: 4px;
+    }
+  }
+}
+
+p.message {
+  margin: 1em 0 !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.message-right{
+  flex-direction: row-reverse;
+}
+
+.message img {
+  width: 30px;height: 30px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 10px;
+}

@@ -1,0 +1,106 @@
+//=== Hide
+@media (max-width: #{$breakpoint-s}){
+    .hide--s{
+        display: none !important;
+    }
+}
+@media (max-width: #{$breakpoint-m}){
+    .hide--m{
+        display: none !important;
+    }
+}
+@media (max-width: #{$breakpoint-l}){
+    .hide--l{
+        display: none !important;
+    }
+}
+@media (max-width: #{$breakpoint-xl}){
+    .hide--xl{
+        display: none !important;
+    }
+}
+@media (max-width: #{$breakpoint-xxl}){
+    .hide--xxl{
+        display: none !important;
+    }
+}
+
+//=== Show
+@media (min-width: #{$breakpoint-s}){
+    .show--s{
+        display: none !important;
+    }
+}
+@media (min-width: #{$breakpoint-m}){
+    .show--m{
+        display: none !important;
+    }
+}
+@media (min-width: #{$breakpoint-l}){
+    .show--l{
+        display: none !important;
+    }
+}
+@media (min-width: #{$breakpoint-xl}){
+    .show--xl{
+        display: none !important;
+    }
+}
+@media (min-width: #{$breakpoint-xxl}){
+    .show--xxl{
+        display: none !important;
+    }
+}
+
+.hide{
+    display: none !important;
+}
+
+.cf{
+    &::after{
+        content:'';
+        visibility:hidden;
+        display:block;
+        height:0;
+        clear:both;
+    }
+}
+
+.truncate{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//=== Centering
+.center{
+    position:relative;
+    &.center--v{
+        top:50%;
+        transform:translateY(-50%);
+    }
+    &.center--h{
+        margin:0 auto;
+        text-align: center;
+    }
+}
+
+//Aspect Ratios
+.ar{
+    height:0;
+    background-position:center;
+    background-size:cover;
+    &.ar--1-1{
+        width:100%;
+        padding-top:100%;
+    }
+    &.ar--16-9{
+        width:100%;
+        padding-top:56.25%;
+    }
+}
+
+//=== Floats
+.clear{
+    clear: both;
+}

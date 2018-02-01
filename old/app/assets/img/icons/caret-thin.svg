@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Atoms/Icons/Carat Thin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.85355339,9.14644661 C6.65829124,8.95118446 6.34170876,8.95118446 6.14644661,9.14644661 C5.95118446,9.34170876 5.95118446,9.65829124 6.14644661,9.85355339 L12.1464466,15.8535534 C12.3417088,16.0488155 12.6582912,16.0488155 12.8535534,15.8535534 L18.8535534,9.85355339 C19.0488155,9.65829124 19.0488155,9.34170876 18.8535534,9.14644661 C18.6582912,8.95118446 18.3417088,8.95118446 18.1464466,9.14644661 L12.5,14.7928932 L6.85355339,9.14644661 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms/Icons/Carat-Thin">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Carat-Copy-3" fill="#373B4D" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="Atoms/Colors/Black" mask="url(#mask-2)" fill="#333333">
+                <rect id="Rectangle-5-Copy" x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

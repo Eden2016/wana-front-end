@@ -1,0 +1,58 @@
+//=================//
+//===== Color =====//
+//=================//
+
+$lightest-gray:  #F7F9FA;
+$light-gray:     #EFF2F3;
+$gray:           #E1E7E9;
+$dark-gray:      #CBD3D6;
+$darkest-gray:   #A8B4BA;
+
+$white:             #FFFFFF;
+$white-80:          rgba($white, 0.8);
+$white-60:          rgba($white, 0.6);
+$white-40:          rgba($white, 0.4);
+$white-20:          rgba($white, 0.2);
+$white-15:          rgba($white, 0.15);
+$white-10:          rgba($white, 0.1);
+
+$black:             #373B4D;
+$black-80:          rgba($black, 0.8);
+$black-60:          rgba($black, 0.6);
+$black-40:          rgba($black, 0.4);
+$black-20:          rgba($black, 0.2);
+$black-15:          rgba($black, 0.15);
+$black-10:          rgba($black, 0.1);
+
+$primary:           #5F70D0;
+$primary-80:        #7F8DDA;
+$primary-60:        #9FA9E3;
+$primary-40:        #BFC6EC;
+$primary-20:        #DFE2F6;
+
+$secondary:         #00BDCA;
+$secondary-80:      #33CAD5;
+$secondary-60:      #66D7DF;
+$secondary-40:      #99E5EA;
+$secondary-20:      #CCF2F4;
+
+$tertiary:          #F5BB23;
+$tertiary-80:       #F7C94F;
+$tertiary-60:       #F9D67B;
+$tertiary-40:       #FBE4A7;
+$tertiary-20:       #FDF1D3;
+
+$warning:           #FA1A45;
+$warning-80:        #FB486A;
+$warning-60:        #FC768F;
+$warning-40:        #FDA3B5;
+$warning-20:        #FED1DA;
+
+$facebook:          #3766B8;
+
+$code:              #00979D;
+
+$box-shadow: 		0px 0px 5px 0px $black-15;
+
+$overlay:           rgba($darkest-gray, .9);
+$overlay-primary:   rgba($primary, .8);

@@ -1,0 +1,73 @@
+.banner{
+    text-shadow:0 0 5px rgba(0,0,0, 0.5);
+    position: relative;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &.banner--m{
+        height:32vw;
+        min-height:460px;
+    }
+    &.banner--l{
+        height:38vw;
+        min-height:560px;
+    }
+    &.banner--empty{
+        padding-top:$grid-unit*4;
+        background-image:url('/assets/img/def-family.png');
+    }
+    .map{
+        width:100%;
+        height:100%;
+    }
+    .cover{
+        width:100%;
+        height:512px;
+        border-radius:$borderRadius-m $borderRadius-m 0 0;
+        position: relative;
+        overflow: hidden;
+        text-shadow:none;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::before, &::after{
+            content:'';
+            width:calc(100% + 1px);
+            height:50px;
+            display: block;
+            position: absolute;
+            z-index: 0;
+        }
+        &::before{
+            height:72px;
+            top:0;
+            opacity: 0.4;
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 0%, #000000 100%);
+            border-radius: 2px;
+        }
+        &::after{
+            height:50%;
+            bottom:0;
+            opacity:0.85;
+            background-image: linear-gradient(0deg, #000000 0%, rgba(0,0,0,0.00) 100%);
+        }
+        .cover__info{
+            width:100%;
+            padding:$spacing-m;
+            position:absolute;
+            box-sizing: border-box;
+            z-index: 1;
+            color:$white;
+            &.cover__info--t{
+                top:0;
+            }
+            &.cover__info--b{
+                bottom:0;
+            }
+        }
+        .fam__meta{
+            width:80%;
+            max-width:800px;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+//======================//
+//===== Typography =====//
+//======================//
+
+//=== Setup
+$primary-font: 'proxima-soft', sans-serif;
+$heading-font: 'museo-sans-rounded', sans-serif;
+$header-lineheight: 1em;
+$header-margin-bottom: 0.625em;
+$line-height:1.4em;
+
+// Sizes
+$fs-xxl: 2.5em;
+$fs-xl: 1.75em;
+$fs-l: 1.25em;
+$fs-m: 1.125em;
+$fs-s: 1em;
+$fs-xs: 0.875em;
+$fs-xxs: 0.625em;
+
+//=== Base Typography
+//===================
+
+body{
+    font-family: $primary-font;
+    font-size: 1em;
+    color: $black-80;
+    line-height:$line-height;
+}
+h1, h2, h3, h4, h5, h6{
+    line-height:$header-lineheight;
+    margin-bottom:$header-margin-bottom;
+    color:$black;
+    font-weight:500;
+    &:last-child{
+        margin-bottom:0;
+    }
+    &.heading{
+        font-family:$heading-font;
+        font-weight:900;
+    }
+    &.section-title{
+        padding-top:$header-lineheight*2;
+        padding-bottom:$header-lineheight;
+        border-bottom:1px solid $gray;
+    }
+    // &.ts--label{
+    //     color:$primary;
+    // }
+}
+h1{
+    font-size:2em;
+    margin-bottom:0.625em;
+}
+h2{
+    font-size:1.5em;
+}
+h3{
+    font-size:1.25em;
+}
+h4{
+    font-size:1.125em;
+}
+h5{
+    font-size:1em;
+}
+h6{
+    font-size:0.875em;
+}
+p{
+    font-size:1em;
+    margin-bottom:$line-height;
+    &:last-child{
+        margin-bottom:0;
+    }
+    code.il{
+        font-size:0.875em;
+    }
+    a{
+        color:$black;
+        font-weight:500;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.p-small {
+    font-size:.875em;
+}
+@include medium{
+    h1{
+        font-size:2.5em;
+    }
+    h2{
+        font-size:1.75em;
+    }
+}
+@include large{
+    h1{
+        font-size:2.75em;
+    }
+    h2{
+        font-size:2em;
+    }
+    h3{
+        font-size:1.5em;
+    }
+}
+@include xlarge{
+    body{
+        font-size: 110%;
+    }
+}
+
+small{
+    display: block;
+    font-size:0.75em;
+}
+
+code.il{
+    padding:$spacing-xxs $spacing-xs;
+    border:1px solid $gray;
+    background-color:$light-gray;
+    border-radius:3px;
+    box-sizing: border-box;
+    color:$code;
+}
+
+a{
+    text-decoration: none;
+    color:$black;
+    [class*='icon-']{
+        color:$black-60;
+    }
+}
+
+::selection {
+  background: $tertiary;
+}
+::-moz-selection {
+  background: $tertiary;
+}
+
+.-reversed{
+    color: $white;
+    p{
+        color:$white-80;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color:$white;
+    }
+    a{
+        color:$white;
+        [class*='icon-']{
+            color:$white;
+        }
+    }
+}
+
+//=== Predefined Text Styles
+.ts--label{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight:600;
+    color:$black;
+    letter-spacing: 0.4px;
+    vertical-align: middle;
+}
+
+.hbars span {
+    background: #373B4D;
+    width: 18px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+//=== Body Text Resets (info pages)
+.body{
+  color:#373B4D;
+  a{
+    text-decoration: underline;
+    &:hover{
+      color:#5F70D0;
+    }
+  }
+  h3{
+    margin-top:2em;
+  }
+  ul.list--bulleted{
+    margin-left:1.4em;
+    margin-bottom:2em;
+  }
+  ul li{
+    margin-top:1em;
+  }
+}
+body{
+
+}

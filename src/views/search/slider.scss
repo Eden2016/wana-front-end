@@ -1,0 +1,44 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// .slider__container{
+//   display: block;
+//   margin:0 20px;
+// }
+/* the slides */
+
+/* the slides */
+.slick-slide {
+  padding: 0 10px;
+}
+/* the parent */
+.slick-list {
+  // margin: 0 -10px;
+}
+.slick-initialized{
+  overflow: hidden;
+}
+
+.slick-slide .card {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+ul.slick-dots{
+  position: static;
+}
+// .slider__container > .card:first-child {
+//   padding-left: 0px;
+// }
+
+@media (max-width: 766px){
+  section.app__body{
+      padding-bottom:85px;
+  }
+}
+@media (max-width: 535px){
+  section.app__body{
+      padding-bottom:92px;
+  }
+}

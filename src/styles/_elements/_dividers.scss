@@ -1,0 +1,37 @@
+.divider{
+    &.divider--caret-r, &.divider--caret-l{
+        width:8px;
+        height:7px;
+        display: inline-block;
+        vertical-align: middle;
+        margin:0 $grid-unit 0 ($grid-unit - 4);
+        background-size: 8px 7px;
+        background-position: center;
+        background-image:url('/assets/img/caret-hor-teal.svg');
+    }
+    &.divider--caret-l{
+        transform: scaleX(-1);
+    }
+}
+
+hr{
+    border:none;
+    margin:$spacing-m 0;
+    &.hairline{
+        height:1px;
+        background-color:$gray;
+    }
+    &.divider{
+      width:64px;
+      height:2px;
+      display: block;
+      margin:$spacing-m auto;
+      background-color:$gray;
+    }
+}
+
+.-reversed{
+  hr{
+    background-color:$white-20;
+  }
+}
